@@ -3,6 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "author": "MD Abu Sayed Shuvo <TP083213@mail.apu.edu.my>",
+  "description": "Personal portfolio website showcasing projects and skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shuvo-labb/Sayed-Portfolio"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

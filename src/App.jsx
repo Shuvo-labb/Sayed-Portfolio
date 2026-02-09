@@ -1,3 +1,10 @@
+/**
+ * Portfolio Application
+ * Author: MD Abu Sayed Shuvo
+ * GitHub: https://github.com/Shuvo-labb
+ * Copyright (c) 2026
+ */
+
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'

@@ -33,3 +33,15 @@ npm run dev
 ## Author
 
 **MD Abu Sayed Shuvo** - [GitHub](https://github.com/Shuvo-labb)
+
+ICT (Software Engineering) Student at Asia Pacific University, Malaysia
+
+## License
+
+MIT License - Copyright © 2026 MD Abu Sayed Shuvo
+
+Feel free to use this code for learning purposes. If you use it, please give credit.
+
+---
+
+*Built with dedication and by the grace of Allah* 🤲
