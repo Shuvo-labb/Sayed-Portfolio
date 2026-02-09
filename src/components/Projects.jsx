@@ -27,7 +27,7 @@ const Projects = () => {
       description: 'Modern, interactive portfolio website built with React.js featuring GSAP animations, component-based architecture, and responsive design principles for an immersive user experience.',
       tech: ['React.js', 'GSAP', 'CSS3', 'Vite'],
       github: 'https://github.com/Shuvo-labb',
-      live: null,
+      live: 'https://sayedshuvo-portfolio.vercel.app/',
       featured: true,
       image: null,
     },
