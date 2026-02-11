@@ -25,6 +25,7 @@ Modern, interactive portfolio website built with React, GSAP, and Vite.
 - Resend (Email API)
 - Vercel (Hosting + Serverless Functions)
 - CSS3
+- Github Copilot
 
 ## Getting Started
 
@@ -47,4 +48,4 @@ Feel free to use this code for learning purposes. If you use it, please give cre
 
 ---
 
-*Built with dedication and by the grace of Allah* 🤲
+*Built by the grace of Allah* 🤲
