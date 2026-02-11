@@ -76,9 +76,9 @@ const About = () => {
               food-sharing platform which was built in the RWDD module that helps reduce waste in the University.
             </p>
             <p>
-              I'm know <span className="highlight">JavaScript, HTML/CSS, PHP, Java(basic academic exposure), and Python(basic academic exposure)</span>, 
+              I know <span className="highlight">JavaScript, HTML/CSS, PHP, Java(basic academic exposure), and Python(basic academic exposure)</span>, 
               and currently learning <span className="highlight">React.js</span>. 
-              Iam intrested in coding and IT related works.
+              I am interested in coding and IT related works.
             </p>
             <p>
               Alhamdulillah, Iam a member of the <span className="highlight">GitHub Student Developer Pack</span>, which has the valuable resources to enhance my skills and projects.

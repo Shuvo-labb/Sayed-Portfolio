@@ -36,7 +36,7 @@ const Skills = () => {
       title: 'Databases',
       skills: [
         { name: 'MySQL', icon: <SiMysql /> },
-        { name: 'Firebase', icon: <SiFirebase /> },
+        { name: 'Firebase(Used long ago)', icon: <SiFirebase /> },
         { name: 'Supabase', icon: <SiSupabase /> },
       ]
     },
@@ -47,7 +47,6 @@ const Skills = () => {
         { name: 'VS Code', icon: <VscCode /> },
         { name: 'IntelliJ IDEA', icon: <SiIntellijidea /> },
         { name: 'XAMPP', icon: <FaDatabase /> },
-        { name: 'Vite', icon: <SiVite /> },
         { name: 'Vercel', icon: <SiVercel /> },
       ]
     },

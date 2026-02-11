@@ -105,7 +105,7 @@ const Contact = () => {
                 <FiMapPin className="contact-info-icon" />
                 <div>
                   <span className="contact-info-label">Location</span>
-                  <span className="contact-info-value">Sri Petaling, Kuala Lumpur 57000, Malaysia</span>
+                  <span className="contact-info-value">Kuala Lumpur, Malaysia</span>
                 </div>
               </div>
               <div className="contact-info-item">

@@ -60,7 +60,7 @@ const Projects = () => {
     <section id="projects" ref={sectionRef} className="projects section-padding">
       <div className="container">
         <h2 ref={titleRef} className="section-heading">
-          <span className="heading-number">03.</span> Things I've Built
+          <span className="heading-number">03.</span> Projects
         </h2>
 
         <div ref={projectsRef} className="projects-list">

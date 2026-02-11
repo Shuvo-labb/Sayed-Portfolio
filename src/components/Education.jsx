@@ -66,7 +66,7 @@ const Education = () => {
                     <span>Programming with Python</span>
                     <span>Database Management</span>
                     <span>Low-Code Development</span>
-                    <span>Object Oriented Proggraming</span>
+                    <span>Object Oriented Programming</span>
                   </div>
                 </div>
               </div>

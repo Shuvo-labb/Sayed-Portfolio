@@ -9,11 +9,12 @@ Modern, interactive portfolio website built with React, GSAP, and Vite.
 - Custom animated cursor
 - Fully responsive design
 - Hero section with floating particles
-- Skills section with progress bars
+- Skills section with modern pill tags
 - Project showcase cards
 - Education timeline
-- Contact form
-- Integrated CV viewer
+- Contact form with Resend email API
+- Downloadable CV (PDF)
+- LinkedIn, GitHub social links
 
 ## Tech Stack
 
@@ -21,6 +22,8 @@ Modern, interactive portfolio website built with React, GSAP, and Vite.
 - Vite
 - GSAP (GreenSock Animation Platform)
 - React Icons
+- Resend (Email API)
+- Vercel (Hosting + Serverless Functions)
 - CSS3
 
 ## Getting Started
