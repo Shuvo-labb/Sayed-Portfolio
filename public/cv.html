@@ -470,30 +470,135 @@
         }
 
         /* ===== PRINT ===== */
+        @page {
+            size: A4;
+            margin: 6mm;
+        }
+
         @media print {
+            html {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
             body {
-                background: white;
-                padding: 0;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
+                background: white !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                width: 100% !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
             }
+
             .cv-container {
-                box-shadow: none;
-                border-radius: 0;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                margin: 0 !important;
             }
+
             .download-btn { display: none !important; }
-            .cv-header { padding: 36px 40px 32px; }
-            .cv-main { padding: 32px 32px 32px 40px; }
-            .cv-sidebar { padding: 32px 28px; }
-            .section { margin-bottom: 28px; }
-            .skill-pill:hover, .github-badge:hover {
-                border-color: var(--border);
-                color: var(--text-secondary);
-                background: white;
-                box-shadow: none;
+
+            /* Compact header */
+            .cv-header {
+                padding: 22px 24px 18px !important;
+                gap: 16px !important;
             }
-            .cv-body { page-break-inside: avoid; }
-            .entry { page-break-inside: avoid; }
+
+            .header-name { font-size: 1.7em !important; }
+            .header-title { font-size: 0.92em !important; }
+            .header-subtitle { font-size: 0.78em !important; }
+            .header-contact { gap: 5px !important; }
+            .header-contact-item { font-size: 0.75em !important; gap: 6px !important; }
+            .header-contact-item svg { width: 12px !important; height: 12px !important; }
+
+            /* Two-column body — use percentages so it fits any page width */
+            .cv-body {
+                grid-template-columns: 1fr 35% !important;
+            }
+
+            .cv-main { padding: 18px 20px 14px 24px !important; }
+            .cv-sidebar { padding: 18px 16px 14px !important; }
+
+            /* Compact sections */
+            .section { margin-bottom: 14px !important; }
+            .section-title {
+                font-size: 0.68em !important;
+                margin-bottom: 8px !important;
+                padding-bottom: 5px !important;
+            }
+            .section-title svg { width: 12px !important; height: 12px !important; }
+
+            .summary-text { font-size: 0.78em !important; line-height: 1.45 !important; }
+
+            .entry { margin-bottom: 12px !important; }
+            .entry-header { gap: 4px !important; margin-bottom: 3px !important; }
+            .entry-title { font-size: 0.88em !important; }
+            .entry-date { font-size: 0.68em !important; padding: 1px 8px !important; }
+            .entry-org { font-size: 0.78em !important; margin-bottom: 1px !important; }
+            .entry-location { font-size: 0.72em !important; margin-bottom: 4px !important; }
+            .entry-details li {
+                font-size: 0.76em !important;
+                margin-bottom: 2px !important;
+                padding-left: 12px !important;
+                line-height: 1.4 !important;
+            }
+            .entry-details li::before { top: 6px !important; width: 4px !important; height: 4px !important; }
+            .entry-badge { font-size: 0.72em !important; padding: 2px 8px !important; margin-bottom: 4px !important; }
+            .entry-badge svg { width: 11px !important; height: 11px !important; }
+            .entry-tags { gap: 3px !important; margin-top: 4px !important; }
+            .entry-tag { font-size: 0.66em !important; padding: 2px 7px !important; }
+            .entry-links { font-size: 0.72em !important; margin-top: 3px !important; }
+
+            /* Compact sidebar */
+            .sidebar-section { margin-bottom: 14px !important; }
+            .sidebar-title {
+                font-size: 0.64em !important;
+                margin-bottom: 8px !important;
+                padding-bottom: 5px !important;
+            }
+
+            .skill-group { margin-bottom: 8px !important; }
+            .skill-group-title { font-size: 0.72em !important; margin-bottom: 4px !important; }
+            .skill-pills { gap: 3px !important; }
+            .skill-pill { font-size: 0.66em !important; padding: 2px 7px !important; }
+
+            .info-list li { padding: 4px 0 !important; font-size: 0.76em !important; }
+            .info-list .info-label { font-size: 0.64em !important; margin-bottom: 1px !important; }
+
+            .learning-list li { font-size: 0.72em !important; padding: 2px 0 2px 14px !important; line-height: 1.35 !important; }
+
+            .github-badge { padding: 6px 8px !important; margin-top: 3px !important; }
+            .github-badge svg { width: 18px !important; height: 18px !important; }
+            .github-badge-text { font-size: 0.68em !important; }
+            .github-badge-sub { font-size: 0.6em !important; }
+
+            .cv-footer { padding: 8px 24px !important; font-size: 0.66em !important; }
+
+            /* Disable hover effects */
+            .skill-pill:hover, .github-badge:hover {
+                border-color: var(--border) !important;
+                color: var(--text-secondary) !important;
+                background: white !important;
+                box-shadow: none !important;
+                transform: none !important;
+            }
+
+            /* Prevent page breaks */
+            .cv-container,
+            .cv-header,
+            .cv-body,
+            .cv-main,
+            .cv-sidebar,
+            .section,
+            .entry,
+            .sidebar-section {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
         }
 
         @media (max-width: 768px) {
@@ -529,7 +634,7 @@
         <header class="cv-header">
             <div class="header-info">
                 <h1 class="header-name">MD Abu Sayed <span>Shuvo</span></h1>
-                <div class="header-title">Software Engineering Student</div>
+                <div class="header-title">ICT(Software Engineering Student)</div>
                 <div class="header-subtitle">Diploma in ICT (Software Engineering) &bull; Asia Pacific University</div>
             </div>
             <div class="header-contact">
@@ -570,12 +675,11 @@
                         Professional Summary
                     </h2>
                     <p class="summary-text">
-                        Motivated ICT (Software Engineering) student at Asia Pacific University with hands-on experience 
-                        in full-stack web development. Skilled in JavaScript, HTML/CSS, and PHP with working knowledge of 
+                        ICT (Software Engineering) student at Asia Pacific University. knows in JavaScript, HTML/CSS, and PHP with working knowledge of 
                         MySQL databases. Built a food-sharing platform in a team to address food waste in university communities. 
-                        Currently expanding frontend expertise with React.js through structured self-learning. 
-                        Member of the GitHub Student Developer Pack. Seeking internship opportunities to apply technical 
-                        skills and contribute to real-world software projects.
+                        Currently learning React.js through structured self-learning on educative.io. 
+                        Member of the GitHub Student Developer Pack. Seeking University part-time opportunities to apply technical 
+                        skills.
                     </p>
                 </section>
 
@@ -597,8 +701,8 @@
                             CGPA: 3.28
                         </div>
                         <ul class="entry-details">
-                            <li>Specializing in software engineering with focus on web technologies and database systems</li>
-                            <li>Relevant coursework: Responsive Web Design & Development, Programming with Python, Database Management, Object Oriented Programming, Low-Code Development</li>
+                            <li>Software engineering with interested in web technologies like JavaScript, HTML/CSS, and nodejs</li>
+                            <li>Relevant coursework: Responsive Web Design & Development, Programming with Python, Database Management, Object Oriented Programming, DevOps & Low-Code Development</li>
                         </ul>
                     </div>
                 </section>
@@ -618,16 +722,16 @@
                         <div class="entry-org">Team Project &bull; RWDD Module</div>
                         <ul class="entry-details">
                             <li>Developed a full-stack web platform connecting students and food distributors to reduce food waste in university communities</li>
-                            <li>Implemented user authentication, waste logging system, and real-time food availability dashboard</li>
+                            <li>Implemented user authentication, waste logging system, and real-time food availability page(food listing)</li>
                             <li>Built responsive frontend with HTML/CSS and JavaScript; backend powered by PHP and MySQL</li>
-                            <li>Collaborated with team members using Git version control for code management</li>
+                            <li>Collaborated with team members using Github</li>
                         </ul>
                         <div class="entry-tags">
                             <span class="entry-tag">HTML/CSS</span>
                             <span class="entry-tag">JavaScript</span>
                             <span class="entry-tag">PHP</span>
                             <span class="entry-tag">MySQL</span>
-                            <span class="entry-tag">Git</span>
+                            <span class="entry-tag">Github</span>
                         </div>
                         <div class="entry-links">
                             <a href="https://github.com/Shuvo-labb/RWDD.git" target="_blank">View on GitHub &rarr;</a>
@@ -641,7 +745,7 @@
                         </div>
                         <div class="entry-org">Individual Project</div>
                         <ul class="entry-details">
-                            <li>Designed and built a modern, interactive portfolio using React.js with component-based architecture</li>
+                            <li>Designed and built a modern, interactive portfolio using Github Copilot, React.js with component-based architecture</li>
                             <li>Integrated GSAP animations and ScrollTrigger for immersive scroll-driven transitions</li>
                             <li>Implemented serverless contact form using Vercel Functions and Resend email API</li>
                             <li>Deployed on Vercel with custom domain and automated CI/CD pipeline</li>
@@ -705,9 +809,9 @@
                         <div class="skill-group-title">Languages</div>
                         <div class="skill-pills">
                             <span class="skill-pill">JavaScript</span>
-                            <span class="skill-pill">PHP</span>
-                            <span class="skill-pill">Java</span>
-                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">PHP(basic academic exposure)</span>
+                            <span class="skill-pill">Java(basic academic exposure)</span>
+                            <span class="skill-pill">Python(basic academic exposure)</span>
                             <span class="skill-pill">HTML/CSS</span>
                         </div>
                     </div>
@@ -715,8 +819,8 @@
                     <div class="skill-group">
                         <div class="skill-group-title">Frameworks</div>
                         <div class="skill-pills">
-                            <span class="skill-pill">React.js</span>
-                            <span class="skill-pill">GSAP</span>
+                            <span class="skill-pill">React.js(Learning)</span>
+                            <span class="skill-pill">GSAP(used it with github copilot)</span>
                         </div>
                     </div>
 
@@ -724,8 +828,8 @@
                         <div class="skill-group-title">Databases</div>
                         <div class="skill-pills">
                             <span class="skill-pill">MySQL</span>
-                            <span class="skill-pill">Firebase</span>
-                            <span class="skill-pill">Supabase</span>
+                            <span class="skill-pill">Firebase(Used long ago)</span>
+                            <span class="skill-pill">Supabase(Used long ago)</span>
                         </div>
                     </div>
 
@@ -735,7 +839,7 @@
                             <span class="skill-pill">Git / GitHub</span>
                             <span class="skill-pill">VS Code</span>
                             <span class="skill-pill">Vercel</span>
-                            <span class="skill-pill">Vite</span>
+                            <span class="skill-pill">Vite(used it with github copilot)</span>
                             <span class="skill-pill">IntelliJ IDEA</span>
                             <span class="skill-pill">XAMPP</span>
                             <span class="skill-pill">NetBeans</span>
@@ -750,7 +854,6 @@
                     <ul class="learning-list">
                         <li>React 19: Complete Guide to Modern Web Apps</li>
                         <li>JavaScript in Detail: Beginner to Advanced</li>
-                        <li>Full-Stack Web Development</li>
                     </ul>
                 </div>
 
