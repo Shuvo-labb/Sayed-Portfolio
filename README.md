@@ -48,4 +48,4 @@ Feel free to use this code for learning purposes. If you use it, please give cre
 
 ---
 
-*Built by the grace of Allah* 🤲
+*Built by the grace of Allah* ☝️

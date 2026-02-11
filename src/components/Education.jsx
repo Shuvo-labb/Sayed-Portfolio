@@ -65,8 +65,9 @@ const Education = () => {
                     <span>Responsive Web Design & Development</span>
                     <span>Programming with Python</span>
                     <span>Database Management</span>
-                    <span>Low-Code Development</span>
+                    <span>DevOps And Low-Code Development</span>
                     <span>Object Oriented Programming</span>
+                    <span>Fundamentals of UI/UX Design</span>
                   </div>
                 </div>
               </div>

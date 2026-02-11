@@ -76,12 +76,12 @@ const About = () => {
               food-sharing platform which was built in the RWDD module that helps reduce waste in the University.
             </p>
             <p>
-              I know <span className="highlight">JavaScript, HTML/CSS, PHP, Java(basic academic exposure), and Python(basic academic exposure)</span>, 
+              I know <span className="highlight">JavaScript, HTML/CSS, PHP(basic academic exposure), Java(basic academic exposure), and Python(basic academic exposure)</span>, 
               and currently learning <span className="highlight">React.js</span>. 
               I am interested in coding and IT related works.
             </p>
             <p>
-              Alhamdulillah, Iam a member of the <span className="highlight">GitHub Student Developer Pack</span>, which has the valuable resources to enhance my skills and projects.
+              Alhamdulillah, Iam a member of the <span className="highlight">GitHub Student Developer Pack</span>, which has the valuable resources to enhance skills and projects.
             </p>
 
             <div className="about-info-grid">
@@ -107,7 +107,7 @@ const About = () => {
           <div ref={imageRef} className="about-image">
             <div className="image-wrapper">
               <div className="image-placeholder">
-                <span className="image-initials">MAS</span>
+                <span className="image-initials">Sayed</span>
                 <span className="image-label">Image</span>
               </div>
               <div className="image-border"></div>
