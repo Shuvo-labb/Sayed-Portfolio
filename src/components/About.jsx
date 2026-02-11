@@ -66,23 +66,22 @@ const About = () => {
         <div className="about-grid">
           <div ref={contentRef} className="about-content">
             <p>
-              <span className="accent-text">Assalamu Alaikum!</span> I'm MD Abu Sayed Shuvo, a passionate 
-              Software Engineering student at <span className="highlight">Asia Pacific University</span> in 
+              <span className="accent-text">Hello</span> I'm MD Abu Sayed Shuvo, an 
+              ICT(Software Engineering) student at <span className="highlight">Asia Pacific University</span> in 
               Kuala Lumpur, Malaysia.
             </p>
             <p>
               Originally from Bangladesh, I'm currently pursuing my Diploma in ICT specializing in Software Engineering. 
-              I have a deep interest in web development and love building solutions that make a real impact — like my 
-              food-sharing platform that helps reduce waste in student communities.
+              I have an interest in web development and also mobile app development — like the 
+              food-sharing platform which was built in the RWDD module that helps reduce waste in the University.
             </p>
             <p>
-              I'm proficient in <span className="highlight">JavaScript, HTML/CSS, PHP, Java, and Python</span>, 
-              and currently expanding my frontend skills with <span className="highlight">React.js</span>. 
-              I believe in continuous learning and am always exploring new technologies to grow as a developer.
+              I'm know <span className="highlight">JavaScript, HTML/CSS, PHP, Java(basic academic exposure), and Python(basic academic exposure)</span>, 
+              and currently learning <span className="highlight">React.js</span>. 
+              Iam intrested in coding and IT related works.
             </p>
             <p>
-              When I'm not coding, you'll find me exploring new tech, learning from online platforms like Educative, 
-              and working on projects that challenge me to think creatively.
+              Alhamdulillah, Iam a member of the <span className="highlight">GitHub Student Developer Pack</span>, which has the valuable resources to enhance my skills and projects.
             </p>
 
             <div className="about-info-grid">
@@ -109,7 +108,7 @@ const About = () => {
             <div className="image-wrapper">
               <div className="image-placeholder">
                 <span className="image-initials">MAS</span>
-                <span className="image-label">Add Your Photo Here</span>
+                <span className="image-label">Image</span>
               </div>
               <div className="image-border"></div>
             </div>

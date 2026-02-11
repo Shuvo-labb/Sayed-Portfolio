@@ -52,7 +52,7 @@ const Education = () => {
                   <h4 className="timeline-place">Asia Pacific University</h4>
                   <p className="timeline-location">Kuala Lumpur, Malaysia</p>
                 </div>
-                <span className="timeline-date">Aug 2024 - Nov 2026 (Expected)</span>
+                <span className="timeline-date">Aug 2024 - Nov 2026</span>
               </div>
               <div className="timeline-details">
                 <div className="cgpa-badge">
@@ -63,10 +63,10 @@ const Education = () => {
                   <h5>Relevant Coursework:</h5>
                   <div className="coursework-tags">
                     <span>Responsive Web Design & Development</span>
-                    <span>Programming Principles</span>
-                    <span>Database Systems</span>
+                    <span>Programming with Python</span>
+                    <span>Database Management</span>
                     <span>Low-Code Development</span>
-                    <span>Software Engineering Fundamentals</span>
+                    <span>Object Oriented Proggraming</span>
                   </div>
                 </div>
               </div>
@@ -90,10 +90,8 @@ const Education = () => {
                 <div className="coursework">
                   <h5>Currently Learning:</h5>
                   <div className="coursework-tags">
-                    <span>React.js</span>
-                    <span>Advanced JavaScript</span>
-                    <span>Full-Stack Development</span>
-                    <span>Modern Web Architecture</span>
+                    <span>Learn React 19: The Complete Guide to Modern Web Apps</span>
+                    <span>JavaScript in Detail: From Beginner to Advanced</span>
                   </div>
                 </div>
               </div>

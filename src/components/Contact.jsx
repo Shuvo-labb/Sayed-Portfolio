@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { FiMail, FiMapPin, FiGithub, FiSend } from 'react-icons/fi'
+import { FiMail, FiMapPin, FiGithub, FiSend, FiLinkedin } from 'react-icons/fi'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -13,17 +13,37 @@ const Contact = () => {
 
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // In a real app, connect to a backend API
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 3000)
-    setForm({ name: '', email: '', subject: '', message: '' })
+    setSending(true)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form)
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setSubmitted(true)
+        setForm({ name: '', email: '', subject: '', message: '' })
+        setTimeout(() => setSubmitted(false), 5000)
+      } else {
+        alert(data.error || 'Something went wrong. Please try again.')
+      }
+    } catch (error) {
+      alert('Failed to send message. Please try again later.')
+    } finally {
+      setSending(false)
+    }
   }
 
   useEffect(() => {
@@ -66,8 +86,7 @@ const Contact = () => {
         <div className="contact-grid">
           <div ref={contentRef} className="contact-content">
             <h3 className="contact-subtitle">Let's work together</h3>
-            <p className="contact-text">
-              I'm currently looking for internship opportunities and collaborations. 
+            <p className="contact-text"> 
               Whether you have a question, a project idea, or just want to say hello, 
               feel free to reach out. In sha Allah, I'll try my best to get back to you!
             </p>
@@ -98,6 +117,15 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
+              <div className="contact-info-item">
+                <FiLinkedin className="contact-info-icon" />
+                <div>
+                  <span className="contact-info-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/md-abu-sayed-shuvo-7452253aa/" target="_blank" rel="noopener noreferrer" className="contact-info-value">
+                    linkedin.com/in/md-abu-sayed-shuvo
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -114,8 +142,8 @@ const Contact = () => {
             <div className="form-group">
               <textarea name="message" placeholder="Your Message" rows="5" value={form.message} onChange={handleChange} required></textarea>
             </div>
-            <button type="submit" className="btn btn-primary btn-submit">
-              <FiSend /> Send Message
+            <button type="submit" className="btn btn-primary btn-submit" disabled={sending}>
+              <FiSend /> {sending ? 'Sending...' : 'Send Message'}
             </button>
             {submitted && <p className="form-success">Message sent successfully! JazakAllah Khair!</p>}
           </form>

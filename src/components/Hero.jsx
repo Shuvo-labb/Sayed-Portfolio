@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
-import { FiGithub, FiMail, FiMapPin, FiArrowDown } from 'react-icons/fi'
+import { FiGithub, FiMail, FiMapPin, FiArrowDown, FiLinkedin } from 'react-icons/fi'
 
 const Hero = () => {
   const heroRef = useRef(null)
@@ -87,15 +87,14 @@ const Hero = () => {
 
       <div className="hero-content">
         <p ref={subtitleRef} className="hero-greeting">
-          <span className="accent">Assalamu Alaikum,</span> I'm
+          <span className="accent">Hello</span> I'm
         </p>
         <div ref={titleRef} className="hero-title">
           <span>MD Abu Sayed</span>
           <span className="outline-text">Shuvo<span className="accent">.</span></span>
         </div>
         <p ref={descRef} className="hero-description">
-          Software Engineering Student at Asia Pacific University, passionate about building 
-          modern web applications and solving real-world problems through code.
+          ICT(Software Engineering) Student at Asia Pacific University, Interested in web development and also mobile app development. Looking forward to work where I can enhance my skills and contribute to the organization's growth. In Sha Allah
         </p>
         <div ref={ctaRef} className="hero-cta">
           <a href="#projects" className="btn btn-primary" onClick={(e) => { e.preventDefault(); document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' }) }}>
@@ -109,6 +108,7 @@ const Hero = () => {
 
       <div ref={socialRef} className="hero-social">
         <a href="https://github.com/Shuvo-labb" target="_blank" rel="noopener noreferrer"><FiGithub /></a>
+        <a href="https://www.linkedin.com/in/md-abu-sayed-shuvo-7452253aa/" target="_blank" rel="noopener noreferrer"><FiLinkedin /></a>
         <a href="mailto:TP083213@mail.apu.edu.my"><FiMail /></a>
         <a href="#contact" onClick={(e) => { e.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' }) }}><FiMapPin /></a>
         <div className="social-line"></div>
