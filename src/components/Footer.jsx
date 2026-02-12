@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
           <div className="footer-center">
             <p className="footer-credit">
-              Designed & Built by AI, customized by <span className="accent">MD Abu Sayed Shuvo</span>
+              Built by Github copilot, customized by <span className="accent">MD Abu Sayed Shuvo</span>
             </p>
             <p className="footer-copy">&copy; 2026 All Rights Reserved</p>
           </div>
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>Made with <FiHeart className="heart-icon" /></p>
+          <p>Shuvo<FiHeart className="heart-icon" /></p>
         </div>
       </div>
     </footer>
