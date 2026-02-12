@@ -98,7 +98,7 @@ const Hero = () => {
         </p>
         <div ref={ctaRef} className="hero-cta">
           <a href="#projects" className="btn btn-primary" onClick={(e) => { e.preventDefault(); document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' }) }}>
-            View My Work
+            Projects
           </a>
           <a href="#contact" className="btn btn-outline" onClick={(e) => { e.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' }) }}>
             Get In Touch
