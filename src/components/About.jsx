@@ -71,9 +71,9 @@ const About = () => {
               Kuala Lumpur, Malaysia.
             </p>
             <p>
-              Originally from Bangladesh, I'm currently pursuing my Diploma in ICT specializing in Software Engineering. 
-              I have an interest in web development and also mobile app development — like the 
-              food-sharing platform which was built in the RWDD module that helps reduce waste in the University.
+              Originally from Bangladesh, I'm currently pursuing my Diploma in Information and Communication Technology specialism in Software Engineering. 
+              I have an interest in web development and also mobile app development — Developed the 
+              food-sharing platform with group members in the RWDD module that helps reduce waste in the University.
             </p>
             <p>
               I know <span className="highlight">JavaScript, HTML/CSS, PHP(basic academic exposure), Java(basic academic exposure), and Python(basic academic exposure)</span>, 
