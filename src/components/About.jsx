@@ -67,7 +67,7 @@ const About = () => {
           <div ref={contentRef} className="about-content">
             <p>
               <span className="accent-text">Hello</span> I'm MD Abu Sayed Shuvo, an 
-              ICT(Software Engineering) student at <span className="highlight">Asia Pacific University</span> in 
+              ICT(Specialism: Software Engineering) student at <span className="highlight">Asia Pacific University</span> in 
               Kuala Lumpur, Malaysia.
             </p>
             <p>

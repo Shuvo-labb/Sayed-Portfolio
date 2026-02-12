@@ -94,7 +94,7 @@ const Hero = () => {
           <span className="outline-text">Shuvo<span className="accent">.</span></span>
         </div>
         <p ref={descRef} className="hero-description">
-          ICT(Software Engineering) Student at Asia Pacific University, Interested in web development and also mobile app development. Looking forward to work where I can enhance my skills and contribute to the organization's growth. In Sha Allah
+          ICT(Specialism: Software Engineering) Student at Asia Pacific University, Interested in web development and also mobile app development. Looking forward to work where I can enhance my skills and contribute to the organization's growth. In Sha Allah
         </p>
         <div ref={ctaRef} className="hero-cta">
           <a href="#projects" className="btn btn-primary" onClick={(e) => { e.preventDefault(); document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' }) }}>

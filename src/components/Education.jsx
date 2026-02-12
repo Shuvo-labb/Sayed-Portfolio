@@ -48,7 +48,7 @@ const Education = () => {
             <div className="timeline-content">
               <div className="timeline-header">
                 <div>
-                  <h3 className="timeline-title">Diploma in ICT (Software Engineering)</h3>
+                  <h3 className="timeline-title">Diploma in ICT (Specialism: Software Engineering)</h3>
                   <h4 className="timeline-place">Asia Pacific University</h4>
                   <p className="timeline-location">Kuala Lumpur, Malaysia</p>
                 </div>
