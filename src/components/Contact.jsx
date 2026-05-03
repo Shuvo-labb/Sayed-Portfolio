@@ -121,8 +121,8 @@ const Contact = () => {
                 <FiLinkedin className="contact-info-icon" />
                 <div>
                   <span className="contact-info-label">LinkedIn</span>
-                  <a href="https://www.linkedin.com/in/md-abu-sayed-shuvo-7452253aa/" target="_blank" rel="noopener noreferrer" className="contact-info-value">
-                    linkedin.com/in/md-abu-sayed-shuvo
+                  <a href="https://www.linkedin.com/in/md-abu-sayed-shuvo-753806407" target="_blank" rel="noopener noreferrer" className="contact-info-value">
+                    LinkedIn
                   </a>
                 </div>
               </div>
