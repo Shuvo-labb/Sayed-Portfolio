@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="footer-right">
             <div className="footer-socials">
               <a href="https://github.com/Shuvo-labb" target="_blank" rel="noopener noreferrer"><FiGithub /></a>
-              <a href="https://www.linkedin.com/in/md-abu-sayed-shuvo-7452253aa/" target="_blank" rel="noopener noreferrer"><FiLinkedin /></a>
+              <a href="https://www.linkedin.com/in/md-abu-sayed-shuvo-753806407" target="_blank" rel="noopener noreferrer"><FiLinkedin /></a>
               <a href="mailto:TP083213@mail.apu.edu.my"><FiMail /></a>
             </div>
           </div>

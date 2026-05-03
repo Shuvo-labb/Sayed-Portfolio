@@ -108,7 +108,7 @@ const Hero = () => {
 
       <div ref={socialRef} className="hero-social">
         <a href="https://github.com/Shuvo-labb" target="_blank" rel="noopener noreferrer"><FiGithub /></a>
-        <a href="https://www.linkedin.com/in/md-abu-sayed-shuvo-7452253aa/" target="_blank" rel="noopener noreferrer"><FiLinkedin /></a>
+        <a href="https://www.linkedin.com/in/md-abu-sayed-shuvo-753806407" target="_blank" rel="noopener noreferrer"><FiLinkedin /></a>
         <a href="mailto:TP083213@mail.apu.edu.my"><FiMail /></a>
         <a href="#contact" onClick={(e) => { e.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' }) }}><FiMapPin /></a>
         <div className="social-line"></div>
