@@ -57,7 +57,7 @@ const Education = () => {
               <div className="timeline-details">
                 <div className="cgpa-badge">
                   <FiAward />
-                  <span>CGPA: 3.28</span>
+                  <span>CGPA: 3.29</span>
                 </div>
                 <div className="coursework">
                   <h5>Relevant Coursework:</h5>
