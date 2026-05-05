@@ -50,7 +50,7 @@ const About = () => {
   }, [])
 
   const stats = [
-    { number: '3.28', label: 'CGPA' },
+    { number: '3.29', label: 'CGPA' },
     { number: '1+', label: 'Projects' },
     { number: '5+', label: 'Technologies' },
     { number: '2026', label: 'Expected Grad' },
@@ -99,7 +99,7 @@ const About = () => {
               </div>
               <div className="about-info-item">
                 <span className="about-info-label">Languages</span>
-                <span className="about-info-value">Bengali, English, Malay</span>
+                <span className="about-info-value">English</span>
               </div>
             </div>
           </div>
