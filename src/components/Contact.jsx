@@ -80,7 +80,7 @@ const Contact = () => {
     <section id="contact" ref={sectionRef} className="contact section-padding">
       <div className="container">
         <h2 ref={titleRef} className="section-heading">
-          <span className="heading-number">05.</span> Get In Touch
+          <span className="heading-number">06.</span> Get In Touch
         </h2>
 
         <div className="contact-grid">
@@ -122,7 +122,7 @@ const Contact = () => {
                 <div>
                   <span className="contact-info-label">LinkedIn</span>
                   <a href="https://www.linkedin.com/in/md-abu-sayed-shuvo-753806407" target="_blank" rel="noopener noreferrer" className="contact-info-value">
-                    LinkedIn
+                    linkedin.com/in/md-abu-sayed-shuvo-753806407
                   </a>
                 </div>
               </div>

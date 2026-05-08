@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
+import { FiFileText, FiGithub, FiLinkedin } from 'react-icons/fi'
 
 const Navbar = () => {
   const navRef = useRef(null)
@@ -12,6 +13,7 @@ const Navbar = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
     { name: 'Education', href: '#education' },
+    { name: 'Certificates', href: '#certificates' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -42,23 +44,32 @@ const Navbar = () => {
           SHUVO<span className="accent">.</span>
         </a>
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-          {navLinks.map((link, i) => (
-            <a
-              key={i}
-              href={link.href}
-              className="nav-link"
-              onClick={(e) => handleClick(e, link.href)}
-            >
-              <span className="nav-link-number">0{i + 1}.</span>
-              {link.name}
+          <div className="nav-links-group">
+            {navLinks.map((link, i) => (
+              <a
+                key={i}
+                href={link.href}
+                className="nav-link"
+                onClick={(e) => handleClick(e, link.href)}
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+          <div className="nav-actions">
+            <a href="/cv.html" target="_blank" rel="noopener noreferrer" className="nav-cta nav-cta-primary">
+              <FiFileText />
+              My CV
             </a>
-          ))}
-          <a href="/cv.html" target="_blank" rel="noopener noreferrer" className="nav-cta">
-            My CV
-          </a>
-          <a href="https://github.com/Shuvo-labb" target="_blank" rel="noopener noreferrer" className="nav-cta">
-            GitHub
-          </a>
+            <a href="https://github.com/Shuvo-labb" target="_blank" rel="noopener noreferrer" className="nav-cta nav-cta-ghost" aria-label="GitHub">
+              <FiGithub />
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/md-abu-sayed-shuvo-753806407" target="_blank" rel="noopener noreferrer" className="nav-cta nav-cta-ghost" aria-label="LinkedIn">
+              <FiLinkedin />
+              <span>LinkedIn</span>
+            </a>
+          </div>
         </div>
         <button className={`hamburger ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
           <span></span>

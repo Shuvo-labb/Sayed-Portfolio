@@ -12,6 +12,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Education from './components/Education'
+import Certificates from './components/Certificates'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CustomCursor from './components/CustomCursor'
@@ -31,6 +32,7 @@ function App() {
         <Skills />
         <Projects />
         <Education />
+        <Certificates />
         <Contact />
       </main>
       <Footer />

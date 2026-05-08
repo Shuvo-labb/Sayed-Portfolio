@@ -103,6 +103,12 @@ const Hero = () => {
           <a href="#contact" className="btn btn-outline" onClick={(e) => { e.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' }) }}>
             Get In Touch
           </a>
+          <a href="/cv.html" target="_blank" rel="noopener noreferrer" className="btn btn-social">
+            My CV
+          </a>
+          <a href="https://www.linkedin.com/in/md-abu-sayed-shuvo-753806407" target="_blank" rel="noopener noreferrer" className="btn btn-social">
+            <FiLinkedin /> LinkedIn
+          </a>
         </div>
       </div>
 

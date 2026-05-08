@@ -9,7 +9,7 @@ const About = () => {
   const titleRef = useRef(null)
   const contentRef = useRef(null)
   const statsRef = useRef(null)
-  const imageRef = useRef(null)
+  const asideRef = useRef(null)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -29,13 +29,15 @@ const About = () => {
         }
       )
 
-      gsap.fromTo(imageRef.current,
-        { opacity: 0, scale: 0.8, rotate: -5 },
-        {
-          opacity: 1, scale: 1, rotate: 0, duration: 1, ease: 'power3.out',
-          scrollTrigger: { trigger: imageRef.current, start: 'top 80%' }
-        }
-      )
+      if (asideRef.current) {
+        gsap.fromTo(asideRef.current.children,
+          { opacity: 0, y: 40 },
+          {
+            opacity: 1, y: 0, duration: 0.8, stagger: 0.15, ease: 'power3.out',
+            scrollTrigger: { trigger: asideRef.current, start: 'top 80%' }
+          }
+        )
+      }
 
       gsap.fromTo(statsRef.current.children,
         { opacity: 0, y: 30 },
@@ -55,6 +57,7 @@ const About = () => {
     { number: '5+', label: 'Technologies' },
     { number: '2026', label: 'Expected Grad' },
   ]
+
 
   return (
     <section id="about" ref={sectionRef} className="about section-padding">
@@ -104,13 +107,21 @@ const About = () => {
             </div>
           </div>
 
-          <div ref={imageRef} className="about-image">
-            <div className="image-wrapper">
-              <div className="image-placeholder">
-                <span className="image-initials">Sayed</span>
-                <span className="image-label">Image</span>
-              </div>
-              <div className="image-border"></div>
+          <div ref={asideRef} className="about-aside">
+            <div className="about-aside-card">
+              <h3 className="about-aside-title">Availability</h3>
+              <span className="about-availability">Open for internships</span>
+              <p className="about-aside-text">
+                Currently looking for internship opportunities where I can learn,
+                contribute, and grow as a developer.
+              </p>
+              <a
+                href="#contact"
+                className="about-aside-cta"
+                onClick={(e) => { e.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' }) }}
+              >
+                Contact Me
+              </a>
             </div>
           </div>
         </div>
