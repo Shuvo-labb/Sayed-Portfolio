@@ -28,7 +28,6 @@ const Skills = () => {
       skills: [
         { name: 'HTML5', icon: <DiHtml5 /> },
         { name: 'CSS3', icon: <DiCss3 /> },
-        { name: 'React.js(Learning)', icon: <FaReact /> },
         { name: 'Responsive Design', icon: <DiHtml5 /> },
       ]
     },
@@ -36,8 +35,7 @@ const Skills = () => {
       title: 'Databases',
       skills: [
         { name: 'MySQL', icon: <SiMysql /> },
-        { name: 'Firebase(Used long ago)', icon: <SiFirebase /> },
-        { name: 'Supabase', icon: <SiSupabase /> },
+        { name: 'Supabase(Used long ago)', icon: <SiSupabase /> },
       ]
     },
     {
@@ -48,6 +46,7 @@ const Skills = () => {
         { name: 'IntelliJ IDEA', icon: <SiIntellijidea /> },
         { name: 'XAMPP', icon: <FaDatabase /> },
         { name: 'Vercel', icon: <SiVercel /> },
+        { name: 'Netbeans', icon: <SiNetbeans /> },
       ]
     },
   ]

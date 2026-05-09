@@ -25,7 +25,7 @@ const Projects = () => {
         {
       title: 'Share & Spare',
       subtitle: 'Food Sharing Platform',
-      description: 'A full-stack web application connecting students and food distributors to reduce food waste. Features user authentication, waste logging system, real-time food availability dashboard, and responsive design for all devices.',
+      description: 'A full-stack web application connecting students and food distributors to reduce food waste. Features waste logging system, real-time food availability dashboard, and responsive design for all devices.',
       tech: ['HTML/CSS', 'JavaScript', 'PHP', 'MySQL'],
       github: 'https://github.com/Shuvo-labb/RWDD.git',
       live: null,

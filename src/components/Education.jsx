@@ -83,7 +83,7 @@ const Education = () => {
                 <div>
                   <h3 className="timeline-title">Continuous Learning</h3>
                   <h4 className="timeline-place">Self-Paced Online Learning</h4>
-                  <p className="timeline-location">Educative.io & Other Platforms</p>
+                  <p className="timeline-location">boot.dev</p>
                 </div>
                 <span className="timeline-date">Ongoing</span>
               </div>
@@ -91,8 +91,7 @@ const Education = () => {
                 <div className="coursework">
                   <h5>Currently Learning:</h5>
                   <div className="coursework-tags">
-                    <span>Learn React 19: The Complete Guide to Modern Web Apps</span>
-                    <span>JavaScript in Detail: From Beginner to Advanced</span>
+                    <span>Back-end Developer Path</span>
                   </div>
                 </div>
               </div>
