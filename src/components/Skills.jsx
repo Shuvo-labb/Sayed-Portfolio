@@ -46,7 +46,7 @@ const Skills = () => {
         { name: 'IntelliJ IDEA', icon: <SiIntellijidea /> },
         { name: 'XAMPP', icon: <FaDatabase /> },
         { name: 'Vercel', icon: <SiVercel /> },
-        { name: 'Netbeans', icon: <SiNetbeans /> },
+
       ]
     },
   ]
