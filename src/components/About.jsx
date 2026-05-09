@@ -74,17 +74,16 @@ const About = () => {
               Kuala Lumpur, Malaysia.
             </p>
             <p>
-              Originally from Bangladesh, I'm currently pursuing my Diploma in Information and Communication Technology specialism in Software Engineering. 
+              I'm currently pursuing my Diploma in Information and Communication Technology specialism in Software Engineering. 
               I have an interest in web development and also mobile app development — Developed the 
               food-sharing platform with group members in the RWDD module that helps reduce waste in the University.
             </p>
             <p>
-              I know <span className="highlight">JavaScript, HTML/CSS, PHP(basic academic exposure), Java(basic academic exposure), and Python(basic academic exposure)</span>, 
-              and currently learning <span className="highlight">React.js</span>. 
+              I know <span className="highlight">JavaScript, HTML/CSS, PHP(basic academic exposure), Java(basic academic exposure), and Python(basic academic exposure)</span>,
               I am interested in coding and IT related works.
             </p>
             <p>
-              Alhamdulillah, Iam a member of the <span className="highlight">GitHub Student Developer Pack</span>, which has the valuable resources to enhance skills and projects.
+              Alhamdulillah, Iam a member of the <span className="highlight">GitHub Student Developer Pack</span>, which has the valuable resources to enhance skills.
             </p>
 
             <div className="about-info-grid">
@@ -93,8 +92,8 @@ const About = () => {
                 <span className="about-info-value">MD Abu Sayed Shuvo</span>
               </div>
               <div className="about-info-item">
-                <span className="about-info-label">Nationality</span>
-                <span className="about-info-value">Bangladesh</span>
+                <span className="about-info-label">University</span>
+                <span className="about-info-value">Asia Pacific University</span>
               </div>
               <div className="about-info-item">
                 <span className="about-info-label">Location</span>
